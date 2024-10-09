@@ -72,6 +72,9 @@ $('body').on('click', '#contact-form-submit', function(e) {
             name: $('#name').val(),
             email: $('#email').val(),
             message: $('#message').val()
+        },
+        success: function(response) {
+            console.log(response);
         }
     })
 
