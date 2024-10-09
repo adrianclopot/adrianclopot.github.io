@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
     <title>Adrian Clopot</title>
 </head>
@@ -17,7 +19,7 @@
             <div class="header-main-container">
 
                 <div class="header-wrapper">
-                    <h1 class="logo">Adrian</h1> 
+                    <h1 class="logo">Adrian &lt;/&gt;</h1>
 
                     <ul class="header-menu">
                         <li><a href="#">Home</a></li>
@@ -39,31 +41,54 @@
                 <h2>
                     Hi, <br>
                     I'm <span class="blue-text">Adrian</span>, <br>
-                    And I am a <span class="red-text">web designer</span>
+                    And I'm <a href="" class="typewrite red-text" data-period="2000" data-type='["a web developer", "a software developer", "a UI/UX designer", "an SEO specialist"]'></a>
                 </h2>
             </div>
-            
+
             <div class="avatar-section">
                 <img src="me.svg" alt="">
             </div>
-        </div>
+
+        </div>    
 
         <div class="hero-bottom-section">
-
-            <div class="hero-bottom-left">
-                <img src="icons/instagram.png" alt="">
-                <img src="icons/twitter.png" alt="">
-                <img src="icons/linkedin.png" alt="">
-            </div>
-
-            <div class="hero-bottom-right">
-                <img src="/icons/arrow-down.png" alt="">
-            </div>
+            <div class="hero-bottom-wrapper">
+                <div class="hero-bottom-left">
+                    <img src="icons/instagram.png" alt="">
+                    <img src="icons/twitter.png" alt="">
+                    <img src="icons/linkedin.png" alt="">
+                </div>
+    
+                <div class="hero-bottom-right">
+                    <img src="/icons/arrow-down.png" alt="">
+                </div>
+            </div>    
         </div>
-        
 
     </section>
 
 
+
+
+
+
+    <section id="contact-form">
+
+        <form>
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="message" placeholder="Message">
+            <button id="contact-form-submit">Submit</button>
+        </form>
+
+    </section>
+
+
+
+
+
+
+
+    <script src="main.js"></script>
 </body>
 </html>

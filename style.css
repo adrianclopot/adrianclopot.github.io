@@ -1,6 +1,9 @@
 body {
     margin: 0;
     font-family: 'outfit';
+    background: url(/images/boydbg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 * {
@@ -21,8 +24,7 @@ h1, h2, h3, p, a {
 /* Nav bar section */
 
 .header-main-container {
-    background: white;
-    filter: drop-shadow(0px 0px 1px #a0a0a0);
+    background: transparent;
     padding: 31px 31px;
 }
 
@@ -56,6 +58,8 @@ h1, h2, h3, p, a {
     height: calc(100vh - 92px);
     display: grid;
     grid-template-rows: 1fr 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero-top-section {
@@ -71,7 +75,7 @@ h1, h2, h3, p, a {
 }
 
 .avatar-section img {
-    height: 600px;
+    height: 580px;
 }
 
 #hero h2 {
@@ -92,8 +96,23 @@ h1, h2, h3, p, a {
 }
 
 .hero-bottom-section {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-bottom-wrapper {
+    width: 1200px;
     display: grid;
     grid-template-columns: 1fr auto;
-    max-width: 1100px;
-    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.hero-bottom-left {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    column-gap: 20px;
+}
+
+.hero-top-section a {
+    text-decoration: none;
 }
